@@ -91,7 +91,7 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.new-input {
   width: 318px;
 }
 
