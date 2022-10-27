@@ -29,6 +29,14 @@
   width: 500px;
   margin: 0 auto 0;
 }
+.task-note {
+  display: inline-block;
+  flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
 .task {
   width: 56%;
   display: inline-block;
@@ -111,12 +119,6 @@ li > * {
 
 li > input[type="checkbox"] {
   margin: 0 10px;
-}
-li > label {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
 }
 li >    input[type="text"] {
   width: 226px;
