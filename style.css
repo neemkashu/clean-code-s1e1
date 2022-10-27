@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.page__header img {
+.header-image {
   width: 100%;
 }
 .page__header .more_inf {
