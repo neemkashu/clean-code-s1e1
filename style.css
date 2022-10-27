@@ -37,11 +37,6 @@
   font-size: 18px;
   width: 226px;
 }
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
 .task-row-wrapper {
   display: flex;
 }
@@ -78,7 +73,8 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task {
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -90,7 +86,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task:focus {
   color: #333;
 }
 
