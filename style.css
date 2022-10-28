@@ -30,7 +30,6 @@
   margin: 0 auto 0;
 }
 .task-note {
-  display: inline-block;
   flex-grow: 1;
   padding-left: 10px;
   box-sizing: border-box;
@@ -75,6 +74,7 @@ button:hover {
 }
 .task {
   flex-grow: 1;
+  width: 226px;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -116,9 +116,7 @@ li > * {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
-li >    input[type="text"] {
-  width: 226px;
-}
+
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -133,17 +131,17 @@ ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
-
-/* Edit Task */
-ul li input[type=text] {
+.task-input_deactive {
   display: none;
 }
-
-ul li.editMode input[type=text] {
+.task-input_active {
   display: inline-block;
   width: 224px;
 }
-
-ul li.editMode label {
+.task-note_active {
+  display: inline-block;
+  width: 224px;
+}
+.task-note_deactive {
   display: none;
 }

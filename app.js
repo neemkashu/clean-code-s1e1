@@ -34,12 +34,14 @@ var createNewTaskElement = function(taskString){
 
     label.innerText = taskString;
     label.className = 'task-note';
+    label.classList.add("task-note_active");
 
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
     editInput.className = "task";
     editInput.classList.add("task-input");
+    editInput.classList.add("task-input_deactive");
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "edit";
@@ -87,7 +89,7 @@ var editTask = function(){
     var editInput = listItem.querySelector('.task-input');
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".edit");
-    var containsClass = listItem.classList.contains("editMode");
+    var containsClass = editInput.classList.contains("task-input_active");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -95,13 +97,21 @@ var editTask = function(){
         //label becomes the inputs value.
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
+        label.classList.remove("task-note_deactive");
+        label.classList.add("task-note_active");
+        editInput.classList.remove("task-input_active");
+        editInput.classList.add("task-input_deactive");
     }else{
         editInput.value = label.innerText;
         editBtn.innerText = "Save";
+        label.classList.remove("task-note_active");
+        label.classList.add("task-note_deactive");
+        editInput.classList.remove("task-input_deactive");
+        editInput.classList.add("task-input_active");
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    //listItem.classList.toggle("task-input_active");
 };
 
 
