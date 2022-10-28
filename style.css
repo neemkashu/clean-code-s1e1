@@ -111,12 +111,12 @@ button{
   margin: 0 10px;
 }
 
-button.task__delete img {
+.delete-button-bkg {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.task__delete img:hover {
+.delete-button-bkg:hover {
   transform: rotateZ(0);
 }
 
