@@ -39,7 +39,7 @@ var createNewTaskElement = function(taskString){
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
-    editInput.className = "task";
+    editInput.className = "input-field";
     editInput.classList.add("task-input");
     editInput.classList.add("task-input_deactive");
 
@@ -110,8 +110,6 @@ var editTask = function(){
         editInput.classList.add("task-input_active");
     }
 
-    //toggle .editmode on the parent.
-    //listItem.classList.toggle("task-input_active");
 };
 
 

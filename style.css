@@ -72,7 +72,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-.task {
+.input-field {
   flex-grow: 1;
   width: 226px;
   margin: 0;
@@ -86,7 +86,7 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task:focus {
+.input-field:focus {
   color: #333;
 }
 
