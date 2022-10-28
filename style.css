@@ -29,7 +29,7 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task-note {
+.task__note {
   flex-grow: 1;
   padding-left: 10px;
   box-sizing: border-box;
@@ -131,17 +131,17 @@ ul#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
-.task-input_deactive {
+.task__input_deactive {
   display: none;
 }
-.task-input_active {
+.task__input_active {
   display: inline-block;
   width: 224px;
 }
-.task-note_active {
+.task__note_active {
   display: inline-block;
   width: 224px;
 }
-.task-note_deactive {
+.task__note_deactive {
   display: none;
 }

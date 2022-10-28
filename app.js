@@ -32,16 +32,18 @@ var createNewTaskElement = function(taskString){
     var deleteButton = document.createElement("button");//delete button
     var deleteButtonImg = document.createElement("img");//delete button image
 
+    listItem.className = "task";
+
     label.innerText = taskString;
-    label.className = 'task-note';
-    label.classList.add("task-note_active");
+    label.className = 'task__note';
+    label.classList.add("task__note_active");
 
     //Each elements, needs appending
     checkBox.type = "checkbox";
     editInput.type = "text";
     editInput.className = "input-field";
-    editInput.classList.add("task-input");
-    editInput.classList.add("task-input_deactive");
+    editInput.classList.add("task__input");
+    editInput.classList.add("task__input_deactive");
 
     editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "edit";
@@ -86,10 +88,10 @@ var editTask = function(){
 
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('.task-input');
+    var editInput = listItem.querySelector('.task__input');
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".edit");
-    var containsClass = editInput.classList.contains("task-input_active");
+    var containsClass = editInput.classList.contains("task__input_active");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -97,17 +99,17 @@ var editTask = function(){
         //label becomes the inputs value.
         label.innerText = editInput.value;
         editBtn.innerText = "Edit";
-        label.classList.remove("task-note_deactive");
-        label.classList.add("task-note_active");
-        editInput.classList.remove("task-input_active");
-        editInput.classList.add("task-input_deactive");
+        label.classList.remove("task__note_deactive");
+        label.classList.add("task__note_active");
+        editInput.classList.remove("task__input_active");
+        editInput.classList.add("task__input_deactive");
     }else{
         editInput.value = label.innerText;
         editBtn.innerText = "Save";
-        label.classList.remove("task-note_active");
-        label.classList.add("task-note_deactive");
-        editInput.classList.remove("task-input_deactive");
-        editInput.classList.add("task-input_active");
+        label.classList.remove("task__note_active");
+        label.classList.add("task__note_deactive");
+        editInput.classList.remove("task__input_deactive");
+        editInput.classList.add("task__input_active");
     }
 
 };
