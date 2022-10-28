@@ -43,12 +43,9 @@
   margin: 0;
   padding: 0px;
 }
-input,
-button{
-  outline: none;
-}
 .button {
   background: none;
+  outline: none;
   border: 0px;
   color: #888;
   font-size: 15px;
@@ -78,6 +75,7 @@ button{
   height: 21px;
   padding: 0 9px;
   border: 1px solid #ddd;
+  outline: none;
   background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
