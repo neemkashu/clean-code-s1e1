@@ -121,7 +121,7 @@ button{
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task__note_completed {
   text-decoration: line-through;
   color: #888;
 }
