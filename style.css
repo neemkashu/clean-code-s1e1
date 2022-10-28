@@ -39,7 +39,7 @@
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.checklist {
   margin: 0;
   padding: 0px;
 }
