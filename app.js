@@ -94,7 +94,7 @@ var editTask = function(){
 
     var listItem = this.parentNode;
 
-    var editInput = listItem.querySelector('.task__input');
+    var editInput = listItem.querySelector(".task__input");
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".task__save-edit");
     var containsClass = editInput.classList.contains("task__input_active");
