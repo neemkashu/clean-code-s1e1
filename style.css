@@ -107,10 +107,6 @@ button:hover {
   align-items: center;
   list-style: none;
 }
-li > * {
-  vertical-align: middle;
-}
-
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
