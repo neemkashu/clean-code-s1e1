@@ -112,6 +112,7 @@
 }
 
 .delete-button-bkg {
+  display: block;
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
