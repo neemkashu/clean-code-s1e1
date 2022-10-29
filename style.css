@@ -64,9 +64,17 @@
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
-  padding: 46px 0 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
   margin: 0;
   text-transform: uppercase;
+}
+.section-name_height_m {
+  padding-top: 46px;
+}
+.section-name_height_s {
+  padding-top: 30px;
 }
 .input-field {
   flex-grow: 1;
@@ -113,6 +121,7 @@
 
 .delete-button-bkg {
   display: block;
+  margin: 0 auto;
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
