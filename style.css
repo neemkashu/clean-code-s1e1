@@ -11,9 +11,11 @@
   text-align: right;
 }
 .header-image {
+  display: block;
   width: 100%;
 }
 .header-link {
+  display: block;
   font-family: fantasy, cursive;
 }
 
